@@ -1,0 +1,228 @@
+body{
+    margin: 0;
+    padding: 0;
+    background:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZZ-43TiamURXYrRBOp-wuxzTy2JEWyhfx9hpbkceuju3f9DyZal5Zg_WFfUzhjPcsovE&usqp=CAU);
+    background-position: center;
+    font-family:sans-serif;
+
+}
+
+/*titulo*/
+
+
+h1{
+    margin: 80px 0 0 350px;
+}
+h1{
+    font-size: 40px;
+    color: rgb(252, 235, 214);
+    text-transform: uppercase;
+    font-weight: bold;
+    position: relative;
+    right: 330px;
+    bottom: 30px;
+
+
+}
+.resumen{
+    
+    font-size: small;
+    color: white;
+    text-align: left;
+    margin-top: 200px;
+    margin-left: 60px;
+    font-size: 30px;
+}
+
+.carousel-1{
+    position: relative;
+    width: 700px;
+    height: 800px;
+    top: 200px;
+    left: 400px;
+    
+}
+
+/*footer pagina 1*/
+.copy-1{
+    text-align: center;
+    position: relative;
+    top: 400px;
+    right: 80px;
+    
+    color: white;
+
+}
+.redes-1{
+    text-align: center;
+    position: relative;
+    top: 400px;
+    right: 100px;
+    background-color: black;
+    
+
+}
+
+/*footer pagina 2*/
+.copy{
+    text-align: center;
+    position: relative;
+    top: 100px;
+    right: 300px;
+    left: 60px;
+    
+    color: white;
+}
+.redes{
+    text-align: center;
+    position: relative;
+    top: 100px;
+    right: 200px;
+    left: 58px;
+    background-color: black;
+}
+/*menu nav*/
+
+.menu{
+    list-style: none;
+    padding: 0%;
+    background: #a92906;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    
+    
+
+}
+.menu li a{
+    text-decoration: none;
+    color: rgb(255, 250, 250);
+    padding: 20px;
+    display: block;
+    text-align: left;
+    
+}
+.menu li{
+    display: inline-block;
+  
+
+}
+.menu li a:hover{
+    background: #d74d08;
+}
+
+/*Barra de navegacion*/
+
+
+
+
+.body-menu{
+
+    background: url(https://img.pikbest.com/background/20220119/simple-black-chinese-food-menu-background_6218692.jpg!sw800);
+}
+
+.text-menu{
+    font-size: 40px;
+    color: rgb(252, 235, 214);
+    text-transform: uppercase;
+    font-weight: bold;
+    position: relative;
+    bottom: 400px;
+    right: 700px;
+
+}
+
+/*carrusel*/
+
+.carousel-slide{
+    position: relative;
+    top: 300px;
+    width: 400px;
+    height: 500px;
+    left: 200px;
+}
+
+.img-men{
+    position:relative;
+    left: 1060px;
+    bottom: 250px;
+    
+}
+
+
+/*mobile*/
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .layout{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr 3fr 2fr 2fr 0.5fr;
+        grid-template-areas: 
+        "nav"
+        "header"
+        "main"
+        "footer";
+    }
+
+}
+
+/*tablet*/
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .layout{
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-rows: 1fr 2fr 2fr 0.5fr;
+        grid-template-areas:
+        "nav header header"
+        "nav footer";
+         
+    }
+}
+/*desktop*/
+@media screen and (min-width: 1024px){
+.layout{
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr 0.5fr;
+    grid-template-areas:
+    "nav header header"
+    "nav footer";
+}
+}
+
+/*pagina menu mobile*/
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .body-menu{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr 3fr 2fr 2fr 0.5fr;
+        grid-template-areas:
+        "header"
+        "footer";
+        
+         }
+         }
+/*menu tablet*/
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .body-menu{
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-rows: 1fr 2fr 2fr 0.5fr;
+        grid-template-areas:
+        "header header"
+        "footer";
+         
+    }
+    }
+
+
+
+/*menu desktop*/
+@media screen and (min-width: 1024px){
+    .body-menu{
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-rows: 1fr 2fr 2fr 0.5fr;
+        grid-template-areas:
+        "header header"
+        "footer";
+    }
+    }
+    
+
+
